@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="preload" href="app.js" as="script">
+    <link rel="preload" href="css.css" as="style">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/kantumruy-pro" rel="stylesheet">
+</head>
+<body>
+    <header class="center" id="main">
+        <nav class="container navegation">
+            <div>
+                <h1 class="title">Ecommerce</h1>
+            </div>
+            <div>
+                <div class="carrito-shop">
+                    <label for="my-shop">
+                        <i class="fa-solid fa-cart-shopping carrito"></i>
+                    </label>
+                    <p class="center" id="counter"></p>
+                </div>
+                <input type="checkbox" id="my-shop">
+                <div class="lista" id="list">
+                    <div class="shop">
+                        <div class="shop-header">
+                            <div class="title-shop">
+                                <i class="fa-solid fa-bag-shopping center"></i>
+                                <h2 class="title-lista">Carrito de Compras</h2>
+                            </div>
+                            <div class="close" id="close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-lista">Tu carrito está vacio</p>
+                        </div>
+                        <div class="info-shop">
+                        </div>
+                        <ul id="carrito">
+        
+                        </ul>
+                        <div id="total-pagar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="center" id="main">
+        <section class="container">
+            <article class="products">
+                <div class="item">
+                    <div class="img">
+                        <img src="img/calculadora.webp" alt="Calculadora" class="img-producto">
+                        <div class="btnAdd center">
+                            <button class="add">
+                                <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                                <p class="center text-cart">
+                                    Agregar
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description"> 
+                        <p class="product-type">Tecnología</p>
+                        <h2 class="product-name">Calculadora Avanzada</h2>
+                        <p class="product-price">S/ 18.50</p>
+                        <span class="statu">En Stock</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/caja-lapiz.jpg" alt="Caja de Lapiz" class="img-producto">
+                        <div class="btnAdd center">
+                            <button class="add">
+                                <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                                <p class="center text-cart">
+                                    Agregar
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description"> 
+                        <p class="product-type">Escritura</p>
+                        <h2 class="product-name">Caja de Lapiz</h2>
+                        <p class="product-price">S/ 12.00</p>
+                        <span class="statu">En Stock</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/grapadora.webp" alt="Grapadora" class="img-producto">
+                        <div class="btnAdd center">
+                            <button class="add">
+                                <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                                <p class="center text-cart">
+                                    Agregar
+                                </p>
+                            </button>   
+                        </div>
+                    </div>
+                    <div class="description"> 
+                        <p class="product-type">Herramientas</p>
+                        <h2 class="product-name">Grapadora</h2>
+                        <p class="product-price">S/ 20.00</p>
+                        <span class="statu">En Stock</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/plumones.webp" alt="Plumones" class="img-producto">
+                        <div class="btnAdd center">
+                            <button class="add">
+                                <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                                <p class="center text-cart">
+                                    Agregar
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description"> 
+                        <p class="product-type">Escritura</p>
+                        <h2 class="product-name">Plumones</h2>
+                        <p class="product-price">S/ 12.00</p>
+                        <span class="statu">Agotados</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/cuaderno.jpg" alt="Cuaderno" class="img-producto">
+                        <div class="btnAdd center">
+                            <button class="add">
+                                <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                                <p class="center text-cart">
+                                    Agregar
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description"> 
+                        <p class="product-type">Papelería</p>
+                        <h2 class="product-name">Cuaderno</h2>
+                        <p class="product-price">S/ 17.50</p>
+                        <span class="statu">En Stock</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/hojas-bond.jpg" alt="Hojas Bond" class="img-producto">
+                        <div class="btnAdd center">
+                            <button class="add">
+                                <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                                <p class="center text-cart">
+                                    Agregar
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description"> 
+                        <p class="product-type">Papelería</p>
+                        <h2 class="product-name">Hojas Bond</h2>
+                        <p class="product-price">S/ 50.00</p>
+                        <span class="statu">Agotados</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/tijeras.jpg" alt="Tijeras" class="img-producto">
+                        <div class="btnAdd center">
+                            <button class="add">
+                                <i class="fa-solid fa-cart-shopping icon-cart"></i>
+                                <p class="center text-cart">
+                                    Agregar
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="description"> 
+                        <p class="product-type">Herramientas</p>
+                        <h2 class="product-name">Tijeras</h2>
+                        <p class="product-price">S/ 5.00</p>
+                        <span class="statu">En Stock</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <ul id="alert" class="mensage-emergente"></ul>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
