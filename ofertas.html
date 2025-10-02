@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+    <link rel="preload" href="app.js" as="script">
+    <link rel="preload" href="css.css" as="style">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/8bc6f858e7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/kantumruy-pro" rel="stylesheet">
+</head>
+<style>
+    .ofertas {
+        min-height: 100dvh;
+        display: grid;
+        place-content: center;
+    }
+</style>
+<body>
+    <header class="center" id="main">
+        <nav class="container navegation">
+            <div>
+                <a href="index.html"  class="title">
+                    <h1>Ecommerce</h1>
+                </a>
+            </div>
+            <div class="obj">
+                <div class="nav">
+                    <label for="burger" id="my-burger"><i class="fa-solid fa-bars"></i></label>
+                    <input type="checkbox" id="burger">
+                    <ul class="enlaces">
+                        <li><a href="index.html" class="enla">Inicio</a></li>
+                        <li><a href="productos.html" class="enla">Productos</a></li>
+                        <li><a href="servicios.html" class="enla">Servicios</a></li>
+                        <li><a href="ofertas.html" class="enla">Ofertas</a></li>
+                        <li><a href="contacto.html" class="enla">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="car">
+                    <div class="carrito-shop">
+                        <label for="my-shop">
+                            <i class="fa-solid fa-cart-shopping carrito"></i>
+                        </label>
+                        <p class="center" id="counter"></p>
+                    </div>
+                    <input type="checkbox" id="my-shop">
+                    <div class="lista" id="list">
+                        <div class="shop">
+                            <div class="shop-header">
+                                <div class="title-shop">
+                                    <i class="fa-solid fa-bag-shopping center"></i>
+                                    <h2 class="title-lista">Carrito de Compras</h2>
+                                </div>
+                                <div class="close" id="close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-lista">Tu carrito está vacio</p>
+                            </div>
+                            <div class="info-shop">
+                            </div>
+                            <ul id="carrito">
+            
+                            </ul>
+                            <div id="total-pagar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="ofertas">
+        <h2>Ofertas</h2>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

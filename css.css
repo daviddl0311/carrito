@@ -21,6 +21,9 @@ header {
     background-color: #fff;
 }
 
+@view-transition {
+    navigation: auto;
+}
 
 .carrito-shop {
     display: flex;
@@ -49,6 +52,10 @@ header {
     gap: 1.3rem;
 }
 /* HEADER */
+.title {
+    text-decoration: none;
+    color: #000;
+}
 .enlaces {
     display: flex;
     gap: 2.6rem; 
@@ -439,7 +446,7 @@ header {
     font-size: 14px;
 }
 
-@media (width < 900px) {
+@media (width < 1200px) {
     header {
         position: fixed;
         width: 100%;
