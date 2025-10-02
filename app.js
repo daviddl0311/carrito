@@ -39,7 +39,7 @@ function renderizar() {
             <i class="fa-solid fa-bag-shopping bag"></i>
         </div>
         <h2 class="center title-lista">Tu carrito está vacío</h2>
-        <p class="center text-lista">Agrega algunos productos para comenzar tu compra</p>
+        <p class="center text-lista2">Agrega algunos productos para comenzar tu compra</p>
         <label id="continue" class="center" for="my-shop">Continuar Comprando</label>
     </div>` : "";
 
@@ -231,10 +231,12 @@ deleteMsg = () => {
     `<h3>Producto eliminado</h3>
     <p>El producto se eliminó del carrito</p>`;
     alert.appendChild(element);
+    alert.style.display = alert.childElementCount > 0 ? "grid" : "none";
 
     setTimeout(() => {
         alert.removeChild(element);
-    }, 3500);
+        alert.style.display = alert.childElementCount > 0 ? "grid" : "none";
+    }, 2000);
 };
 
 function containerProducto(arr, productos) {
@@ -305,10 +307,12 @@ emergeMsg = (item) => {
     `<h3>Producto Agregado</h3>
     <p>${name} se agregó al carrito</p>`;
     alert.appendChild(element);
+    alert.style.display = alert.childElementCount > 0 ? "grid" : "none";
 
     setTimeout(() => {
         alert.removeChild(element);
-    }, 3500);
+        alert.style.display = alert.childElementCount > 0 ? "grid" : "none";
+    }, 2000);
 };
 
 statu.forEach(state => {
@@ -321,5 +325,28 @@ statu.forEach(state => {
         btn.disabled = false;
         state.classList.add("stock");
     }
+})
+
+const myBurger = document.querySelector("#my-burger");
+const burger = document.querySelector("#burger");
+const enlaces = document.querySelectorAll(".enla");
+
+myBurger.addEventListener("click", () => {
+    if(!burger.checked) {
+        myBurger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        myBurger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+});
+
+enlaces.forEach(ele => {
+    ele.addEventListener("click",() => {
+        burger.checked = false;
+        if(!burger.checked) {
+            myBurger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        } else {
+            myBurger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        }
+    })
 })
 

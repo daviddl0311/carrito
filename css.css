@@ -11,7 +11,7 @@ body, button {
     font-family: 'Kantumruy Pro', sans-serif;
 }
 h1 {
-    font-size: clamp(1.2em, 3vw, 1.5em);
+    font-size: clamp(1.1em, 3vw, 1.4em);
 }
 header { 
     top: 0;
@@ -26,6 +26,11 @@ header {
     display: flex;
     position: relative;
     gap: .2rem;
+}
+.obj {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 .center {
     display: grid;
@@ -42,6 +47,24 @@ header {
     padding-block: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.3rem;
+}
+/* HEADER */
+.enlaces {
+    display: flex;
+    gap: 2.6rem; 
+    transition: all .3s ease-in-out;
+}
+.enlaces > li {
+    list-style-type: none;
+    font-size: clamp(14px, 3vw, 16px);
+}
+.enlaces > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+#my-burger, #burger {
+    display: none;
 }
 /* CARRITO */
 .navegation {
@@ -81,12 +104,17 @@ header {
 .text-lista {
     font-size: clamp(14px, 3vw, 16px);
 }
+.text-lista2 {
+    font-size: clamp(14px, 3vw, 16px);
+    text-align: center;
+}
 #continue {
     width: 100%;
     cursor: pointer;
     padding-block: .6rem;
     border-radius: 5px;
     background-color: #fff;
+    font-size: clamp(15px, 3vw, 18px);
 }
 .carrito {
     padding: .5rem;
@@ -320,7 +348,6 @@ header {
     left: 50%;
     right: 50%;
     opacity: .2;
-    /* left: 0%; */
     transition: all .3s ease-in-out;
 }
 .icon-cart {
@@ -412,14 +439,60 @@ header {
     font-size: 14px;
 }
 
-@media (width < 750px) {
+@media (width < 900px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    main {
+        margin-top: 3rem;
+    }
+    .car {
+        order: 1;
+    }
+    .nav {
+        order: 2;
+    }
+
+    #my-burger {
+        display: block;
+    }
+    #burger:checked ~ .enlaces {
+        right: 0;
+    }
+
+    .enlaces {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        display: grid;
+        background-color: #f3f3f3;
+        width: 100%;
+        padding-block: 1.3rem;
+        text-align: center;
+        gap: 2rem;
+    }
+
+
     .lista {
         top: 100%;
-        left: 0;
         right: 0;
+        left: 0;
         width: inherit;
     }
     #my-shop:checked ~ .lista {
         top: 0;
+    }
+
+    .mensage-emergente {
+        top: 2%;
+        left: 10%;
+        right: 10%;
+        bottom: 85%;
+        width: inherit;
+        height: fit-content;
+    }
+    .alert-item {
+        padding: .8rem;
     }
 }
